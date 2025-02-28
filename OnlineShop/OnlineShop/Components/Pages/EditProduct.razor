@@ -1,0 +1,109 @@
+﻿@page "/editproduct"
+@page "/editproduct/{id:int}"
+@rendermode InteractiveServer
+
+@inject NavigationManager NavigationManager
+@inject ProductClient ProductsClient
+@inject ProductTypeClient ProductTypesClient
+
+<PageTitle>@tiltle</PageTitle>
+<h3>@tiltle</h3>
+@if(productTypes is null||product is null)
+{
+    <p><em>加载中...</em></p>
+}
+else
+{
+    <div class="row">
+        <div class="col-md-4">
+            <EditForm Model="@product" FormName="editProduct" OnValidSubmit="HandleSubmitAsync">
+                <DataAnnotationsValidator/>
+                <div class="mb-3">
+                    <label for="name" class="form-label">商品名:</label>
+                    <InputText id="name" @bind-Value="product.Name" class="form-control" />
+                    <ValidationMessage For="()=>product.Name"/>
+                    </div>
+                <div class="mb-3">
+                    <label for="producttype" class="form-label">类别：</label>
+                    <InputSelect id="productType" @bind-Value="product.ProductTypeId" class="form-select">
+                        <option value="">请选择类别</option>
+                        @foreach (var productType in productTypes)
+                        {
+                            <option value="@productType.Id">@productType.Name</option>
+                        }
+                    </InputSelect>
+                    <ValidationMessage For="()=>product.ProductTypeId"/>
+                </div> 
+                <div class="mb-3">
+                    <label for="price" class="form-label">价格：</label>
+                    <InputNumber id="price" @bind-Value="product.Price" class="form-control" />
+                    <ValidationMessage For="()=>product.Price" />
+                    </div>
+    
+                <div class="mb-3">
+                    <label for="stock" class="form-label">库存：</label>
+                    <InputNumber id="stock" @bind-Value="product.Stock" class="form-control" />
+                    <ValidationMessage For="()=>product.Stock"/>
+                    </div>
+                <div class="mb-3">
+                    <label for="imageurl" class="form-label">图片：</label>
+                    <InputText id="pictureUrl" @bind-Value="product.PictureUrl" class="form-control" />
+                    <ValidationMessage For="()=>product.PictureUrl"/>
+                    </div>
+                    <button type="submit" class="btn btn-primary">保存</button>
+                    <a role="button" class="btn btn-secondary" href="/Product">取消</a>
+                </EditForm>
+        </div>
+    </div>
+}
+@code{
+    [Parameter]
+    public int ? Id {get;set;}
+    [SupplyParameterFromForm]
+    private ProductDetails? product {get;set;}
+    private ProductType[]? productTypes;
+    private string tiltle=string.Empty;
+    protected override async Task OnParametersSetAsync()
+    {
+        if (product is not null)
+        {
+            return;
+        }
+        if(Id is not null)
+        {
+            product=await ProductsClient.GetProductAsync(Id.Value);
+            tiltle=$"编辑 {product.Name}";
+        }
+        else
+        {
+            product=new()
+            {
+                Name=string.Empty,
+                PictureUrl=string.Empty
+            };
+            tiltle="新商品";
+        }
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        productTypes=await ProductTypesClient.GetProductTypesAsync();
+    }  
+    private async Task HandleSubmitAsync()
+    {
+        ArgumentNullException.ThrowIfNull(product);
+        if(Id is null)
+        {
+            await ProductsClient.AddProductAsync(product);
+        }
+        else
+        {
+            product.Id=Id.Value;
+            await ProductsClient.UpdateProductAsync(product);
+        }
+
+        
+        NavigationManager.NavigateTo("/");
+    }
+}
+

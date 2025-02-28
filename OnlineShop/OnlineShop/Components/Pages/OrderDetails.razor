@@ -1,0 +1,87 @@
+﻿@page "/orderdetails/{OrderId:int}"
+@inject OrderClient OrderClient
+@using OnlineShop.Models
+<h3>订单详情 - #@OrderId</h3>
+
+@if (order == null)
+{
+    <p><em>加载中...</em></p>
+}
+else
+{
+    <p><strong>订单 ID:</strong> @order.Id</p>
+    <p><strong>用户 ID:</strong> @order.UserId</p>
+    <p><strong>下单时间:</strong> @order.OrderDate</p>
+    <p><strong>状态:</strong> @GetOrderStatusText(order.Status)</p>
+    <p><strong>总金额:</strong> ¥@order.TotalAmount.ToString("F2")</p>
+    <p><strong>客户姓名:</strong> @customerName</p>
+    <p><strong>收货地址:</strong> @shippingAddress</p>
+    <p><strong>收货电话:</strong> @order.ShippingPhone</p>
+
+    <h4>订单商品</h4>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>商品 ID</th>
+                <th>商品名称</th>
+                <th>数量</th>
+                <th>单价</th>
+                <th>小计</th>
+                <th>图片</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in order.Items)
+            {
+                <tr>
+                    <td>@item.ProductId</td>
+                    <td>@item.ProductName</td> 
+                    <td>@item.Quantity</td>
+                    <td>¥@item.Price.ToString("F2")</td>
+                    <td>¥@(item.Price * item.Quantity)</td>
+                    <td>
+                        <div style="width: 100px; height: 100px; overflow: hidden;">
+                            <img src="@item.PictureUrl" style="width: 100%; height: 100%; object-fit: cover; object-position: center;" alt="@item.ProductName" />
+                        </div>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    [Parameter]
+    public int OrderId { get; set; }
+
+    private Order? order;
+    private string customerName = string.Empty;
+    private string shippingAddress = string.Empty;
+
+    protected override async Task OnInitializedAsync()
+    {
+        order = await OrderClient.GetOrderAsync(OrderId);
+        if (order != null)
+        {
+            var addressParts = order.ShippingAddress.Split("//");
+            customerName = addressParts.Length > 0 ? addressParts[0] : string.Empty;
+            shippingAddress = addressParts.Length > 1 ? addressParts[1] : string.Empty;
+        }
+    }
+
+    private string GetOrderStatusText(OrderStatus status)
+    {
+        // 将 OrderStatus 枚举值转换为文本
+        return status switch
+        {
+            OrderStatus.Pending => "待付款",
+            OrderStatus.Paid => "已付款",
+            OrderStatus.Shipped => "配送中",
+            OrderStatus.Delivered => "已送达",
+            OrderStatus.Completed => "已完成",
+            OrderStatus.Cancelled => "已取消",
+            OrderStatus.Refunded => "已退款",
+            _ => "未知状态",
+        };
+    }
+}

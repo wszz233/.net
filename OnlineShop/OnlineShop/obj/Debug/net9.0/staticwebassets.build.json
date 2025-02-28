@@ -1,0 +1,1042 @@
+{
+  "Version": 1,
+  "Hash": "Uaw77ylW8/SLpspqPRp2A37aIZrqgGCoUvXJzlX/u9Q=",
+  "Source": "OnlineShop",
+  "BasePath": "_content/OnlineShop",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "OnlineShop/wwwroot",
+      "Source": "OnlineShop",
+      "ContentRoot": "/Users/john/Documents/Projects/OnlineShop/OnlineShop/wwwroot/",
+      "BasePath": "_content/OnlineShop",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "/Users/john/Documents/Projects/OnlineShop/OnlineShop/obj/Debug/net9.0/compressed/8png6ja2jx-o6dz8fky7m.gz",
+      "SourceId": "OnlineShop",
+      "SourceType": "Computed",
+      "ContentRoot": "/Users/john/Documents/Projects/OnlineShop/OnlineShop/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/OnlineShop",
+      "RelativePath": "OnlineShop#[.{fingerprint=o6dz8fky7m}]!.bundle.scp.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "Reference",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/Users/john/Documents/Projects/OnlineShop/OnlineShop/obj/Debug/net9.0/scopedcss/projectbundle/OnlineShop.bundle.scp.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "3xt7jsas5q",
+      "Integrity": "Nxb5dRH12os8UEi0fgN8pyqDox0n8ULAd9cpGfE7WJk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/john/Documents/Projects/OnlineShop/OnlineShop/obj/Debug/net9.0/scopedcss/projectbundle/OnlineShop.bundle.scp.css"
+    },
+    {
+      "Identity": "/Users/john/Documents/Projects/OnlineShop/OnlineShop/obj/Debug/net9.0/compressed/9kub8c12km-4kywy7iv6g.gz",
+      "SourceId": "OnlineShop",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/john/Documents/Projects/OnlineShop/OnlineShop/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/OnlineShop",
+      "RelativePath": "app#[.{fingerprint=4kywy7iv6g}]?.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/Users/john/Documents/Projects/OnlineShop/OnlineShop/wwwroot/app.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "ahq59hg6v0",
+      "Integrity": "st3KXVd5LITX3Mv9IexzVj2I0PHdFaEDCO8yBMBUp6U=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/john/Documents/Projects/OnlineShop/OnlineShop/wwwroot/app.css"
+    },
+    {
+      "Identity": "/Users/john/Documents/Projects/OnlineShop/OnlineShop/obj/Debug/net9.0/compressed/yc5nv0m928-o6dz8fky7m.gz",
+      "SourceId": "OnlineShop",
+      "SourceType": "Computed",
+      "ContentRoot": "/Users/john/Documents/Projects/OnlineShop/OnlineShop/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/OnlineShop",
+      "RelativePath": "OnlineShop#[.{fingerprint=o6dz8fky7m}]?.styles.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "CurrentProject",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/Users/john/Documents/Projects/OnlineShop/OnlineShop/obj/Debug/net9.0/scopedcss/bundle/OnlineShop.styles.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "3xt7jsas5q",
+      "Integrity": "Nxb5dRH12os8UEi0fgN8pyqDox0n8ULAd9cpGfE7WJk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/john/Documents/Projects/OnlineShop/OnlineShop/obj/Debug/net9.0/scopedcss/bundle/OnlineShop.styles.css"
+    },
+    {
+      "Identity": "/Users/john/Documents/Projects/OnlineShop/OnlineShop/obj/Debug/net9.0/scopedcss/bundle/OnlineShop.styles.css",
+      "SourceId": "OnlineShop",
+      "SourceType": "Computed",
+      "ContentRoot": "/Users/john/Documents/Projects/OnlineShop/OnlineShop/obj/Debug/net9.0/scopedcss/bundle/",
+      "BasePath": "_content/OnlineShop",
+      "RelativePath": "OnlineShop#[.{fingerprint}]?.styles.css",
+      "AssetKind": "All",
+      "AssetMode": "CurrentProject",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ApplicationBundle",
+      "Fingerprint": "o6dz8fky7m",
+      "Integrity": "gG7Ze5DtQIL5KmMmO2B4Ztbk3a6cz2N7++iJNAF76Pk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/john/Documents/Projects/OnlineShop/OnlineShop/obj/Debug/net9.0/scopedcss/bundle/OnlineShop.styles.css"
+    },
+    {
+      "Identity": "/Users/john/Documents/Projects/OnlineShop/OnlineShop/obj/Debug/net9.0/scopedcss/projectbundle/OnlineShop.bundle.scp.css",
+      "SourceId": "OnlineShop",
+      "SourceType": "Computed",
+      "ContentRoot": "/Users/john/Documents/Projects/OnlineShop/OnlineShop/obj/Debug/net9.0/scopedcss/projectbundle/",
+      "BasePath": "_content/OnlineShop",
+      "RelativePath": "OnlineShop#[.{fingerprint}]!.bundle.scp.css",
+      "AssetKind": "All",
+      "AssetMode": "Reference",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ProjectBundle",
+      "Fingerprint": "o6dz8fky7m",
+      "Integrity": "gG7Ze5DtQIL5KmMmO2B4Ztbk3a6cz2N7++iJNAF76Pk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/john/Documents/Projects/OnlineShop/OnlineShop/obj/Debug/net9.0/scopedcss/projectbundle/OnlineShop.bundle.scp.css"
+    },
+    {
+      "Identity": "/Users/john/Documents/Projects/OnlineShop/OnlineShop/wwwroot/app.css",
+      "SourceId": "OnlineShop",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/john/Documents/Projects/OnlineShop/OnlineShop/wwwroot/",
+      "BasePath": "_content/OnlineShop",
+      "RelativePath": "app#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "4kywy7iv6g",
+      "Integrity": "9DR4jqepGIo9Cj7VCYKuZtZqXALX1jWq8UpnuF3uz30=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/app.css"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "app.4kywy7iv6g.css",
+      "AssetFile": "/Users/john/Documents/Projects/OnlineShop/OnlineShop/obj/Debug/net9.0/compressed/9kub8c12km-4kywy7iv6g.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000721500722"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1385"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"st3KXVd5LITX3Mv9IexzVj2I0PHdFaEDCO8yBMBUp6U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 20 Feb 2025 15:00:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"9DR4jqepGIo9Cj7VCYKuZtZqXALX1jWq8UpnuF3uz30=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4kywy7iv6g"
+        },
+        {
+          "Name": "label",
+          "Value": "app.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-9DR4jqepGIo9Cj7VCYKuZtZqXALX1jWq8UpnuF3uz30="
+        }
+      ]
+    },
+    {
+      "Route": "app.4kywy7iv6g.css",
+      "AssetFile": "/Users/john/Documents/Projects/OnlineShop/OnlineShop/wwwroot/app.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2463"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9DR4jqepGIo9Cj7VCYKuZtZqXALX1jWq8UpnuF3uz30=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 20 Feb 2025 15:00:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4kywy7iv6g"
+        },
+        {
+          "Name": "label",
+          "Value": "app.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-9DR4jqepGIo9Cj7VCYKuZtZqXALX1jWq8UpnuF3uz30="
+        }
+      ]
+    },
+    {
+      "Route": "app.4kywy7iv6g.css.gz",
+      "AssetFile": "/Users/john/Documents/Projects/OnlineShop/OnlineShop/obj/Debug/net9.0/compressed/9kub8c12km-4kywy7iv6g.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1385"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"st3KXVd5LITX3Mv9IexzVj2I0PHdFaEDCO8yBMBUp6U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 20 Feb 2025 15:00:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4kywy7iv6g"
+        },
+        {
+          "Name": "label",
+          "Value": "app.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-st3KXVd5LITX3Mv9IexzVj2I0PHdFaEDCO8yBMBUp6U="
+        }
+      ]
+    },
+    {
+      "Route": "app.css",
+      "AssetFile": "/Users/john/Documents/Projects/OnlineShop/OnlineShop/obj/Debug/net9.0/compressed/9kub8c12km-4kywy7iv6g.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000721500722"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1385"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"st3KXVd5LITX3Mv9IexzVj2I0PHdFaEDCO8yBMBUp6U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 20 Feb 2025 15:00:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"9DR4jqepGIo9Cj7VCYKuZtZqXALX1jWq8UpnuF3uz30=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-9DR4jqepGIo9Cj7VCYKuZtZqXALX1jWq8UpnuF3uz30="
+        }
+      ]
+    },
+    {
+      "Route": "app.css",
+      "AssetFile": "/Users/john/Documents/Projects/OnlineShop/OnlineShop/wwwroot/app.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2463"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9DR4jqepGIo9Cj7VCYKuZtZqXALX1jWq8UpnuF3uz30=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 20 Feb 2025 15:00:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-9DR4jqepGIo9Cj7VCYKuZtZqXALX1jWq8UpnuF3uz30="
+        }
+      ]
+    },
+    {
+      "Route": "app.css.gz",
+      "AssetFile": "/Users/john/Documents/Projects/OnlineShop/OnlineShop/obj/Debug/net9.0/compressed/9kub8c12km-4kywy7iv6g.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1385"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"st3KXVd5LITX3Mv9IexzVj2I0PHdFaEDCO8yBMBUp6U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 20 Feb 2025 15:00:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-st3KXVd5LITX3Mv9IexzVj2I0PHdFaEDCO8yBMBUp6U="
+        }
+      ]
+    },
+    {
+      "Route": "OnlineShop.bundle.scp.css",
+      "AssetFile": "/Users/john/Documents/Projects/OnlineShop/OnlineShop/obj/Debug/net9.0/compressed/8png6ja2jx-o6dz8fky7m.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.003039513678"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "328"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Nxb5dRH12os8UEi0fgN8pyqDox0n8ULAd9cpGfE7WJk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 20 Feb 2025 15:04:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"gG7Ze5DtQIL5KmMmO2B4Ztbk3a6cz2N7++iJNAF76Pk=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-gG7Ze5DtQIL5KmMmO2B4Ztbk3a6cz2N7++iJNAF76Pk="
+        }
+      ]
+    },
+    {
+      "Route": "OnlineShop.bundle.scp.css",
+      "AssetFile": "/Users/john/Documents/Projects/OnlineShop/OnlineShop/obj/Debug/net9.0/scopedcss/projectbundle/OnlineShop.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "540"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gG7Ze5DtQIL5KmMmO2B4Ztbk3a6cz2N7++iJNAF76Pk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 20 Feb 2025 15:04:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-gG7Ze5DtQIL5KmMmO2B4Ztbk3a6cz2N7++iJNAF76Pk="
+        }
+      ]
+    },
+    {
+      "Route": "OnlineShop.bundle.scp.css.gz",
+      "AssetFile": "/Users/john/Documents/Projects/OnlineShop/OnlineShop/obj/Debug/net9.0/compressed/8png6ja2jx-o6dz8fky7m.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "328"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Nxb5dRH12os8UEi0fgN8pyqDox0n8ULAd9cpGfE7WJk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 20 Feb 2025 15:04:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Nxb5dRH12os8UEi0fgN8pyqDox0n8ULAd9cpGfE7WJk="
+        }
+      ]
+    },
+    {
+      "Route": "OnlineShop.o6dz8fky7m.bundle.scp.css",
+      "AssetFile": "/Users/john/Documents/Projects/OnlineShop/OnlineShop/obj/Debug/net9.0/compressed/8png6ja2jx-o6dz8fky7m.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.003039513678"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "328"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Nxb5dRH12os8UEi0fgN8pyqDox0n8ULAd9cpGfE7WJk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 20 Feb 2025 15:04:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"gG7Ze5DtQIL5KmMmO2B4Ztbk3a6cz2N7++iJNAF76Pk=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "o6dz8fky7m"
+        },
+        {
+          "Name": "label",
+          "Value": "OnlineShop.bundle.scp.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-gG7Ze5DtQIL5KmMmO2B4Ztbk3a6cz2N7++iJNAF76Pk="
+        }
+      ]
+    },
+    {
+      "Route": "OnlineShop.o6dz8fky7m.bundle.scp.css",
+      "AssetFile": "/Users/john/Documents/Projects/OnlineShop/OnlineShop/obj/Debug/net9.0/scopedcss/projectbundle/OnlineShop.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "540"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gG7Ze5DtQIL5KmMmO2B4Ztbk3a6cz2N7++iJNAF76Pk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 20 Feb 2025 15:04:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "o6dz8fky7m"
+        },
+        {
+          "Name": "label",
+          "Value": "OnlineShop.bundle.scp.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-gG7Ze5DtQIL5KmMmO2B4Ztbk3a6cz2N7++iJNAF76Pk="
+        }
+      ]
+    },
+    {
+      "Route": "OnlineShop.o6dz8fky7m.bundle.scp.css.gz",
+      "AssetFile": "/Users/john/Documents/Projects/OnlineShop/OnlineShop/obj/Debug/net9.0/compressed/8png6ja2jx-o6dz8fky7m.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "328"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Nxb5dRH12os8UEi0fgN8pyqDox0n8ULAd9cpGfE7WJk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 20 Feb 2025 15:04:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "o6dz8fky7m"
+        },
+        {
+          "Name": "label",
+          "Value": "OnlineShop.bundle.scp.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Nxb5dRH12os8UEi0fgN8pyqDox0n8ULAd9cpGfE7WJk="
+        }
+      ]
+    },
+    {
+      "Route": "OnlineShop.o6dz8fky7m.styles.css",
+      "AssetFile": "/Users/john/Documents/Projects/OnlineShop/OnlineShop/obj/Debug/net9.0/compressed/yc5nv0m928-o6dz8fky7m.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.003039513678"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "328"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Nxb5dRH12os8UEi0fgN8pyqDox0n8ULAd9cpGfE7WJk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 20 Feb 2025 15:04:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"gG7Ze5DtQIL5KmMmO2B4Ztbk3a6cz2N7++iJNAF76Pk=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "o6dz8fky7m"
+        },
+        {
+          "Name": "label",
+          "Value": "OnlineShop.styles.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-gG7Ze5DtQIL5KmMmO2B4Ztbk3a6cz2N7++iJNAF76Pk="
+        }
+      ]
+    },
+    {
+      "Route": "OnlineShop.o6dz8fky7m.styles.css",
+      "AssetFile": "/Users/john/Documents/Projects/OnlineShop/OnlineShop/obj/Debug/net9.0/scopedcss/bundle/OnlineShop.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "540"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gG7Ze5DtQIL5KmMmO2B4Ztbk3a6cz2N7++iJNAF76Pk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 20 Feb 2025 15:04:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "o6dz8fky7m"
+        },
+        {
+          "Name": "label",
+          "Value": "OnlineShop.styles.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-gG7Ze5DtQIL5KmMmO2B4Ztbk3a6cz2N7++iJNAF76Pk="
+        }
+      ]
+    },
+    {
+      "Route": "OnlineShop.o6dz8fky7m.styles.css.gz",
+      "AssetFile": "/Users/john/Documents/Projects/OnlineShop/OnlineShop/obj/Debug/net9.0/compressed/yc5nv0m928-o6dz8fky7m.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "328"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Nxb5dRH12os8UEi0fgN8pyqDox0n8ULAd9cpGfE7WJk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 20 Feb 2025 15:04:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "o6dz8fky7m"
+        },
+        {
+          "Name": "label",
+          "Value": "OnlineShop.styles.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Nxb5dRH12os8UEi0fgN8pyqDox0n8ULAd9cpGfE7WJk="
+        }
+      ]
+    },
+    {
+      "Route": "OnlineShop.styles.css",
+      "AssetFile": "/Users/john/Documents/Projects/OnlineShop/OnlineShop/obj/Debug/net9.0/compressed/yc5nv0m928-o6dz8fky7m.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.003039513678"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "328"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Nxb5dRH12os8UEi0fgN8pyqDox0n8ULAd9cpGfE7WJk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 20 Feb 2025 15:04:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"gG7Ze5DtQIL5KmMmO2B4Ztbk3a6cz2N7++iJNAF76Pk=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-gG7Ze5DtQIL5KmMmO2B4Ztbk3a6cz2N7++iJNAF76Pk="
+        }
+      ]
+    },
+    {
+      "Route": "OnlineShop.styles.css",
+      "AssetFile": "/Users/john/Documents/Projects/OnlineShop/OnlineShop/obj/Debug/net9.0/scopedcss/bundle/OnlineShop.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "540"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gG7Ze5DtQIL5KmMmO2B4Ztbk3a6cz2N7++iJNAF76Pk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 20 Feb 2025 15:04:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-gG7Ze5DtQIL5KmMmO2B4Ztbk3a6cz2N7++iJNAF76Pk="
+        }
+      ]
+    },
+    {
+      "Route": "OnlineShop.styles.css.gz",
+      "AssetFile": "/Users/john/Documents/Projects/OnlineShop/OnlineShop/obj/Debug/net9.0/compressed/yc5nv0m928-o6dz8fky7m.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "328"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Nxb5dRH12os8UEi0fgN8pyqDox0n8ULAd9cpGfE7WJk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 20 Feb 2025 15:04:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Nxb5dRH12os8UEi0fgN8pyqDox0n8ULAd9cpGfE7WJk="
+        }
+      ]
+    }
+  ]
+}

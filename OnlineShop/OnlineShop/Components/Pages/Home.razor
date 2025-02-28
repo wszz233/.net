@@ -1,0 +1,143 @@
+﻿@page "/"
+@inject OrderClient OrderClient
+@using OnlineShop.Models
+@using System.Timers
+@implements IDisposable
+@rendermode InteractiveServer
+
+<PageTitle>零距离超市 - 订单列表</PageTitle>
+
+<div class="d-flex justify-content-start">
+    <div class="mt-2">
+        <a class="btn btn-primary" role="button" href="/">首页</a>
+    </div>
+    <div class="m-2">
+        <a class="btn btn-primary" role="button" href="/product">商品管理</a>
+    </div>
+</div>
+
+@if (orders == null)
+{
+    <p><em>加载中...</em></p>
+}
+else
+{
+    @foreach (var dateGroup in orders.GroupBy(o => o.OrderDate.Date).OrderByDescending(g => g.Key))
+    {
+        <h3>@dateGroup.Key.ToString("yyyy-MM-dd")</h3> @* 显示日期标题 *@
+
+        <table class="table table-striped table-bordered table-hover mt-3">
+            <thead class="table-dark">
+                <tr>
+                    <th>订单号</th>
+                    <th>客户姓名</th>
+                    <th>下单时间</th>
+                    <th>状态</th>
+                    <th class="text-end">总金额</th>
+                    <th>收货地址</th>
+                    <th>收货电话</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var order in dateGroup.OrderByDescending(o => o.OrderDate))
+                {
+                    var addressParts = order.ShippingAddress.Split("//");
+                    var customerName = addressParts.Length > 0 ? addressParts[0] : string.Empty;
+                    var shippingAddress = addressParts.Length > 1 ? addressParts[1] : string.Empty;
+
+                    <tr>
+                        <td>@order.Id</td>
+                        <td>@customerName</td>
+                        <td>@order.OrderDate.ToString("yyyy-MM-dd HH:mm:ss")</td>
+                        <td>@GetOrderStatusText(order.Status)</td>
+                        <td class="text-end">¥@order.TotalAmount.ToString("F2")</td>
+                        <td style="font-size:xx-small;">@shippingAddress</td>
+                        <td>@order.ShippingPhone</td>
+                        <td>
+                            <div class="d-flex">
+                                <a class="btn btn-info btn-sm me-2" href="@GetOrderDetailsUrl(order.Id)">
+                                    <i class="bi bi-eye"></i> 查看详情
+                                </a>
+                                @if (order.Status == OrderStatus.Paid)
+                                {
+                                    <button type="button" class="btn btn-warning btn-sm me-2" @onclick="() => UpdateOrderStatus(order.Id, OrderStatus.Shipped)">
+                                        <i class="bi bi-truck"></i> 配送
+                                    </button>
+                                }
+                                @if (order.Status == OrderStatus.Shipped)
+                                {
+                                    <button type="button" class="btn btn-success btn-sm me-2" @onclick="() => UpdateOrderStatus(order.Id, OrderStatus.Delivered)">
+                                        <i class="bi bi-check-all"></i> 送达
+                                    </button>
+                                }
+                            </div>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+}
+
+@code {
+    private Order[]? orders;
+    private Timer? _timer;
+    private const int PollingInterval = 5000; // 轮询间隔 (毫秒)
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadOrders(); // 初始加载
+
+        // 设置定时器，每隔一段时间重新加载订单
+        _timer = new Timer(PollingInterval);
+        _timer.Elapsed += async (sender, e) =>
+        {
+            await InvokeAsync(async () =>
+            {
+                await LoadOrders();
+                StateHasChanged(); // 在 UI 线程中调用
+            });
+        };
+        _timer.Start();
+    }
+
+    private async Task LoadOrders()
+    {
+        orders = (await OrderClient.GetOrdersAsync()).OrderByDescending(o => o.OrderDate).ToArray();
+    }
+
+    private string GetOrderDetailsUrl(int orderId)
+    {
+        return $"/orderdetails/{orderId}";
+    }
+
+    private string GetOrderStatusText(OrderStatus status)
+    {
+        return status switch
+        {
+            OrderStatus.Pending => "待付款",
+            OrderStatus.Paid => "已付款",
+            OrderStatus.Shipped => "配送中",
+            OrderStatus.Delivered => "已送达",
+            OrderStatus.Completed => "已完成",
+            OrderStatus.Cancelled => "已取消",
+            OrderStatus.Refunded => "已退款",
+            _ => "未知状态",
+        };
+    }
+
+    private async Task UpdateOrderStatus(int orderId, OrderStatus newStatus)
+    {
+        await OrderClient.UpdateOrderStatusAsync(orderId, newStatus);
+        await LoadOrders();
+        // StateHasChanged(); // LoadOrders 已经重新加载了数据，这里不需要
+    }
+
+    public void Dispose()
+    {
+        _timer?.Stop();
+        _timer?.Dispose();
+        Console.WriteLine("Orders component disposed.");
+    }
+}
